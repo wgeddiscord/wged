@@ -1,1 +1,66 @@
+/* Fond gif */
+body {
+  margin: 0;
+  padding: 0;
+  background: url('images/bg.gif') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+/* Bouton son */
+#sound-toggle {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  filter: brightness(0) invert(1); /* Rend blanc */
+  transition: opacity 0.4s ease;
+  z-index: 10;
+}
+
+/* Encadré */
+.content {
+  background: rgba(200, 200, 200, 0.2);
+  border-radius: 20px;
+  border: 1px solid white;
+  max-width: 600px;
+  margin: 150px auto;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  backdrop-filter: blur(5px);
+}
+
+/* Photo de profil ronde */
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 2px solid white;
+}
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Texte */
+.text h1 {
+  color: white;
+  font-size: 2.5em;
+  text-shadow: 0 0 5px white;
+  margin: 0;
+}
+.text p {
+  color: black;
+  font-size: 1.2em;
+  font-style: italic;
+  margin: 5px 0 0;
+  text-shadow: 0 0 3px black;
+}
 
